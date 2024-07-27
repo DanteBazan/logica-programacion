@@ -1,0 +1,171 @@
+body {
+    background: #111;
+    color: #eee;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* COMIENZO MODAL */
+
+.modal {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    animation: animation-modal infinite 2s;
+}
+
+.modal-img {
+    width: 90px;
+    border-radius: 100%;
+}
+
+/* FIN MODAL */
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 5px solid #48e;
+    max-width: max-content;
+    margin: 10px auto;
+}
+
+.first-ejercice {
+    margin: 10px;
+    font-size: 35px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid rgb(147, 42, 42);
+    width: max-content;
+    margin: auto;
+}
+
+h2 {
+    font-size: 30px;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #48e;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+strong {
+    display: block;
+    margin-bottom: 13px;
+    margin: 10px;
+}
+
+#edad {
+    border: 0;
+    outline: none;
+    background: #333;
+    padding: 10px;
+    border-radius: 2px;
+    color: #ddd;
+    width: 30%;
+    margin: 10px;
+}
+
+#edad:hover {
+    outline: 2px solid rgb(37, 81, 148);
+}
+
+#edad:focus {
+    outline: 2px solid #48e;
+}
+
+#edad::placeholder {
+    color: #bbb;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btn-enviar {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    background: #48e;
+    color: #ddd;
+    transition: background .1s, outline .1s, color .1s;
+}
+
+#btn-enviar:hover {
+    outline: 3px solid rgb(5, 74, 176);
+    background: rgb(67, 133, 233);
+    color: #fff;
+}
+
+#mensaje {
+    font-size: 19px;
+}
+
+.success {
+    color: rgb(55, 161, 55);
+}
+
+.error {
+    color: rgb(179, 50, 50);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and(max-width:650px) {
+    #edad {
+        max-width: 600px;
+    }
+
+    #btn-enviar {
+        display: inline
+    }
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        text-align: justify;
+    }
+
+    #edad {
+        width: 100%;
+        margin: 0;
+        margin: 5px;
+    }
+
+    #btn-enviar {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #mensaje {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:280px) {
+    #btn-enviar {
+        margin-top: 20px;
+    }
+}
+
+@keyframes animation-modal {
+    from {
+        background: transparent;
+    }
+
+    50% {
+        background: rgb(183, 28, 194);
+
+    }
+
+    to {
+        background: transparent;
+    }
+}
